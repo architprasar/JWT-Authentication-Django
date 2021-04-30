@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 100vh;
+  background-color: #D9AFD9;
+  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+}  
+.regestraiton_login_bdy {
+  width: 100%;
+  height: 100%;
+  background: #f2f2f259;
+  display: block;
+  font-size: 1rem;
+  overflow: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 32px;
+  font-family: "Quicksand", sans-serif;
+  backdrop-filter: blur(30px);
+
+  flex-flow: column;
+}
+
+.regestraiton_login_bdy .cont {
+  width: 100%;
+  height: auto;
+  
+  transition: 0.3s;
+  margin-bottom: 8px;
+  color:black;
+}
+
+.regestraiton_login_bdy .cont .lbl {
+  color: #5e5e5e;
+  font-family: "Quicksand", sans-serif;
+}
+.regestraiton_login_bdy .cont:nth-child(1){
+  margin-bottom: 30px;
+}
+.regestraiton_login_bdy .cont input {
+  margin-top: 8px;
+  background: rgba(255, 255, 255, 0.192);
+  width: 100%;
+  padding-left: 4px;
+  box-shadow: rgb(173, 183, 192) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  font-family: "Quicksand", sans-serif;
+  height: 2.5rem;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-size: 15px;
+  font-weight:bold;
+  transition:  1s;
+  outline: none;
+  color:black;
+}
+.regestraiton_login_bdy .cont input:focus {
+  background: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.sbaseline {
+  width: 0%;
+  height: 0.5px;
+  transition:ease-in 0.5s;
+  background: #4691f6;
+  
+  margin-bottom: 5px;
+}
+.regestraiton_login_bdy .cont:hover .sbaseline {
+  width: 102%;
+}
+.regestraiton_login_bdy .cont:hover .lbl {
+  color: #4691f6;
+}
+
+.submit {
+  background: #4691f6;
+  color: #fff;
+  margin-top: 8px;
+  margin: 0px;
+  margin-top: 32px;
+  width: 100px;
+  width: 80%;
+  border:1px solid #ccc;
+  height:2.7rem;
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  transition: ease-out 0.5s;
+}
+.submit:hover{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.change_slcn{
+  margin-top: 20px;
+  
+}
+.chngbtn{
+  margin-top: 20px;
+  background:none;
+  cursor: pointer;
+  border:none;
+  font-family: "Quicksand", sans-serif;
+  font-size: 30px;
+  color:rgb(0, 0, 0);
+}
+.loggedinas{
+  font-family: "Quicksand", sans-serif;
+  font-size: 30px;
+  color: #3b3b3b;
+  float: left;
+}
+.user{
+  position: relative;
+  font-size: 35px;
+  color: black;
+}
+
+
+.logout{
+  border: 2px solid black;
+  width:150px;
+  height: 70px;
+  margin-top:40px;
+  
+  background:transparent ;
+  font-family: "Quicksand", sans-serif;
+  font-size: 25px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
