@@ -6,6 +6,9 @@ class User extends Component {
     super(props);
     this.state = {
       name: "",
+      f:"",
+      l:"",
+      u:""
     };
 
     this.gm = this.gm.bind(this);
@@ -15,11 +18,14 @@ class User extends Component {
   async gm() {
     try {
       let response = await axiosInstance.get("/hw");
-      const nm = response.data.name;
-      this.setState({
-        name: nm,
-      });
-      return nm;
+     let data = response.data
+       this.setState({
+         name: data.email,
+          f:data.first_name,
+          l:data.last_name,
+          u:data.username
+       });
+      
     } catch (error) {
       console.log("User error: ", JSON.stringify(error, null, 4));
       // throw error; todo
@@ -44,13 +50,15 @@ class User extends Component {
   componentDidMount() {
     this.gm();
   }
-  componentDidUpdate() {
-    this.gm();
-  }
+
   render() {
     return (
       <div>
-        <div className="loggedinas">Hi You are logged in as<div className="user"> {this.state.name}</div></div>
+        <div className="loggedinas">Hi You are logged in as<div className="user">Email : {this.state.name}</div>
+        <div className="user">first name : {this.state.f}</div>
+        <div className="user">last name : {this.state.l}</div>
+        <div className="user">username : {this.state.u}</div>
+        </div>
         <div>
           <button className="logout" onClick={this.logout}>Logout</button>
         </div>

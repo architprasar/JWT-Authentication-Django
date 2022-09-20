@@ -1,8 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 import Holder from './components/holder.js'
 import User from './components/userdata.js'
-import {useEffect} from 'react'
 import React, { Component } from 'react'
 
  class App extends Component {

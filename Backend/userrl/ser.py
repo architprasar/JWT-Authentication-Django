@@ -20,7 +20,7 @@ class Use(serializers.ModelSerializer):
         required=True
     )
     username = serializers.CharField(required=True)
-
+    
     password = serializers.CharField(min_length=8, write_only=True, required=True)
 
     class Meta:
